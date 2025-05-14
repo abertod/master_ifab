@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:master_ifab/config/config.dart';
 
 
-
-
-
-
-
-
 void main() {
   runApp(const MainApp());
 }
