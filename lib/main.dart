@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:master_ifab/config/config.dart';
-import 'package:master_ifab/presentation/screens/screens.dart';
+
 
 
 
@@ -17,10 +17,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    
+    return  MaterialApp.router(
+      routerConfig: appRouter, 
       debugShowCheckedModeBanner: false,
       theme: AppTheme(electusColor: 0).getTheme(),
-      home: DomusScreen(),
+      
     );
   }
 }
