@@ -4,6 +4,7 @@ import 'package:master_ifab/config/config.dart';
 import 'package:master_ifab/presentation/widgets/widgets.dart';
 
 
+
 class VideoScrollableView extends StatelessWidget {
 
   final List<VideoPost> videos;
@@ -21,8 +22,17 @@ class VideoScrollableView extends StatelessWidget {
       itemCount: videos.length,
       itemBuilder: (context, index) {
         final VideoPost videoPost = videos[index];
+
         return Stack(
+          
           children: [
+            // Videos
+            SizedBox.expand(
+              child: FullScreenPlayer(
+              descriptio: videoPost.descriptio,
+              videoUrl: videoPost.videoUrl,
+              ),
+            ),
             //TO DO: video + gradiente
             
             Positioned(
