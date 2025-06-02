@@ -14,7 +14,9 @@ dependencies:
   go_router: ^15.1.2
   google_fonts: ^6.2.1
   intl: ^0.20.2
+  pie_chart: ^5.4.0
   riverpod: ^2.6.1
+  sensors_plus: ^6.1.1
   video_player: ^2.9.5
 
 dev_dependencies:
