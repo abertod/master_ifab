@@ -28,6 +28,28 @@ final appRouter = GoRouter(
       path: '/sensors',
       builder: (context, state) => const SensoresScreen(),
       ),
+      GoRoute(
+      path: '/gyroscope',
+      builder: (context, state) => const GyroscopeSpheraScreen(),
+      ),
+      GoRoute(
+      path: '/location',
+      builder: (context, state) => const LocusScreen(),
+      ),
+      GoRoute(
+      path: '/request',
+      builder: (context, state) => const PokemonsScreen(),
+      routes: [
+        GoRoute(
+          path: ':id',
+          builder: (context, state) {
+            final id = state.pathParameters['id'] ?? '1';
+            return PokemonScreen(pokemonId: id,);
+          },
+          )
+      ]
+      ),
+      
 
   ]
 );
