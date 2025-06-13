@@ -9,3 +9,5 @@ export './sensores/gyroscope_sphera_screen.dart';
 export './locus/locus_screen.dart';
 export './pokemons/pokemons_screen.dart';
 export './pokemons/pokemon_screen.dart';
+export './calceus/calceus_screen.dart';
+export './calceus/calceus_desc_screen.dart';
